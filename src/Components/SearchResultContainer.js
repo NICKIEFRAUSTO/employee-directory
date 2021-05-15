@@ -38,6 +38,12 @@ class SearchResultContainer extends Component {
   render() {
     return (
       <div>
+       <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+          <h1 class="display-4">Employee Directory</h1>
+      </div> 
+      </div>
+      <div>
         <SearchForm
           search={this.state.search}
           handleFormSubmit={this.handleFormSubmit}
@@ -46,6 +52,7 @@ class SearchResultContainer extends Component {
         <ResultList results={this.state.results}
           search={this.state.search}
          />
+      </div>
       </div>
     );
   }
